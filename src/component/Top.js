@@ -12,7 +12,7 @@ export default function Top() {
                         style={{ display: "block", width: 200 }}
                     />
                 </div>
-                <Header as="h1">Yahoo!</Header>
+                {/* <Header as="h1">Yahoo!</Header> */}
             </div>
             <Gnb />
         </div>

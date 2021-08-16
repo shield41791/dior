@@ -2,6 +2,8 @@ import { Menu } from "semantic-ui-react";
 
 export default function Gnb() {
   const activeItem = "home";
+
+  // semantic-ui - collections - menu - inverted
   return (
     <Menu inverted>
       <Menu.Item
