@@ -9,7 +9,9 @@ import { Loader } from "semantic-ui-react";
 import Item from '../../src/component/Item';
 import Head from 'next/head';
 
-// 1. Router Ver (when refresh, error occured)
+// 1. Router Ver
+// 새로고침시 에러가 발생한다. 
+// 이유는 라우터를 통해 id값을 건네 받으므로 새로고침 시에는 id값이 들어가지 않기 때문. 
 
 // const Post = ({}) => {
 //     const router = useRouter();

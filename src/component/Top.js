@@ -7,9 +7,9 @@ export default function Top() {
             <div style={{ display: "flex", paddingTop: 20}}>
                 <div style={{ flex: "250px 0 0" }}>
                     <img
-                        src="/images/logo.jpg"
+                        src={process.env.logoPath}
                         alt="logo"
-                        style={{ display: "block", width: 200 }}
+                        style={{ display: "block", width: 300}}
                     />
                 </div>
                 {/* <Header as="h1">Yahoo!</Header> */}
