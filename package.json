@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "gh-pages -d build",
-    "predeploy": "npm run build"
+    "export": "next export"
   },
   "dependencies": {
     "axios": "^0.21.1",
