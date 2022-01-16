@@ -6,7 +6,7 @@ class MyDocument extends Document {
         return (
             <Html lang="ko">
                 <Head>
-                    <base href={precess.env.baseUri}></base>
+                    <base href={process.env.baseUri}></base>
                 </Head>
                 <body>
                     <Main />
