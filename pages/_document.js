@@ -6,7 +6,7 @@ class MyDocument extends Document {
         return (
             <Html lang="ko">
                 <Head>
-                    <base href={process.env.baseUri}></base>
+                    {process.env.name == 'PRODUCTION' ? <base href={process.env.baseUri}></base> : ''}
                 </Head>
                 <body>
                     <Main />
