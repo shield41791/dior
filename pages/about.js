@@ -6,7 +6,7 @@ export default function About() {
         // <div>pages 폴더 아래에 생성하면, 별다른 설정없이 라우팅된다.</div>;
         <>
             <Head>
-                <meta name="twitter:image" content={process.env.logoPath} />
+                <meta property="og:image" content={process.env.logoPath} />
             </Head>
             <div>
                 <Header as="h3" style={{ paddingTop: 40 }} color="teal">
