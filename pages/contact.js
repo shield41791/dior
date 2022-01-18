@@ -15,5 +15,5 @@ export default function contact({ imageUrl } ) {
 }
 
 contact.getInitialProps = () => {
-  return { imageUrl: process.env.logoPathTest };
+  return { imageUrl: process.env.logoPath2 };
 };
