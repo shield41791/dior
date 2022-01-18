@@ -13,7 +13,7 @@ export default function About({ imageUrl }) {
                 <meta name="twitter:description"
                 content="NEWARK - The guest list and parade of limousines with celebrities emerging from them seemed more suited to a red carpet event in Hollywood or New York than than a gritty stretch of Sussex Avenue near the former site of the James M. Baxter Terrace public housing project here."/>
                 <meta name="twitter:image"
-                    content={ process.env.logoPath }/>
+                    content={ imageUrl }/>
             </Head>
             <div>
                 <Header as="h3" style={{ paddingTop: 40 }} color="teal">
@@ -71,7 +71,6 @@ export default function About({ imageUrl }) {
         </>
     )
 }
-
 
 About.getInitialProps = () => {
   return { imageUrl: process.env.logoPath };
