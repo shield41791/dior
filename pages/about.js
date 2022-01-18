@@ -1,7 +1,7 @@
 import { Button, Divider, Form, FormButton, Header, Input, List, TextArea } from "semantic-ui-react";
 import Head from "next/head";
 
-export default function About() {
+export default function About({ imageUrl }) {
     return (
         // <div>pages 폴더 아래에 생성하면, 별다른 설정없이 라우팅된다.</div>;
         <>
@@ -71,3 +71,8 @@ export default function About() {
         </>
     )
 }
+
+
+About.getInitialProps = () => {
+  return { imageUrl: process.env.logoPath };
+};
