@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-tutorial",
+  "name": "dior",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -22,5 +22,5 @@
     "eslint-config-next": "11.1.0",
     "gh-pages": "^3.2.3"
   },
-  "homepage": "https://shield41791.github.io/nextjs-tutorial"
+  "homepage": "https://shield41791.github.io/dior"
 }
