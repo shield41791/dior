@@ -1,3 +1,10 @@
+## 메모
+- ghpage는 static브랜치를 올린 것 (서버사이드 렌더링? 다이나믹 라우팅? 은 ghpage로 올릴 수 없었음) <- 다시 정확히 알아볼 것
+- 아니면 밑의 설명처럼 Vercel을 써볼까?
+- push하면 자동으로 deploy되도록 되어있음 (github - workflow - node.js.yml)
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
