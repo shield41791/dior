@@ -16,9 +16,9 @@ export default function About({ imageUrl }) {
         <>
             <Head>
                 <meta name="twitter:card" content="summary_large_image"/>
-                <meta name="twitter:title" content="Dior"/>
+                <meta name="twitter:title" content="useEffect metatag test"/>
                 <meta name="twitter:description"
-                content="This is about page"/>
+                content="test 04.01 17:30"/>
                 <meta name="twitter:image" content={ imageUrl }/>
             </Head>
             <div>
