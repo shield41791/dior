@@ -4,10 +4,13 @@ import { useEffect } from 'react'
 
 export default function About({ imageUrl }) {
     useEffect(() => {
+        // add image meta
         const meta = document.createElement('meta')
         meta.name = 'twitter:image'
-        meta.content = 'https://www.daum.net'
+        meta.content = imageUrl
         document.getElementsByTagName('head')[0].appendChild(meta)
+
+        // redirect
         window.location.href = 'https://www.naver.com'
     }, [])
 
@@ -18,8 +21,8 @@ export default function About({ imageUrl }) {
                 <meta name="twitter:card" content="summary_large_image"/>
                 <meta name="twitter:title" content="useEffect metatag test"/>
                 <meta name="twitter:description"
-                content="test 04.01 17:30"/>
-                <meta name="twitter:image" content={ imageUrl }/>
+                content="test 04.01 17:35"/>
+                {/* <meta name="twitter:image" content={ imageUrl }/> */}
             </Head>
             <div>
                 <Header as="h3" style={{ paddingTop: 40 }} color="teal">
