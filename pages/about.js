@@ -1,17 +1,25 @@
 import { Button, Divider, Form, FormButton, Header, Input, List, TextArea } from "semantic-ui-react";
 import Head from "next/head";
 import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 
 export default function About({ imageUrl }) {
+    const router = useRouter()
+
+    const getParamFromUrl = (url, param) => {
+        const arr = url && param && url.match(new RegExp(`[&?]{1}${param}=([^&#]*)`))
+        return (arr && decodeURIComponent(arr[1])) || null
+    }
+
     useEffect(() => {
         // add image meta
-        const meta = document.createElement('meta')
-        meta.name = 'twitter:image'
-        meta.content = imageUrl
-        document.getElementsByTagName('head')[0].appendChild(meta)
+        // const meta = document.createElement('meta')
+        // meta.name = 'twitter:image'
+        // meta.content = imageUrl
+        // document.getElementsByTagName('head')[0].appendChild(meta)
 
         // redirect
-        window.location.href = 'https://www.naver.com'
+        // window.location.href = 'https://www.naver.com'
     }, [])
 
     return (
@@ -22,7 +30,7 @@ export default function About({ imageUrl }) {
                 <meta name="twitter:title" content="useEffect metatag test"/>
                 <meta name="twitter:description"
                 content="test 04.01 17:35"/>
-                {/* <meta name="twitter:image" content={ imageUrl }/> */}
+                <meta name="twitter:image" content={ getParamFromUrl(router.asPath, 'img') }/>
             </Head>
             <div>
                 <Header as="h3" style={{ paddingTop: 40 }} color="teal">
