@@ -4,6 +4,10 @@ import { useEffect } from 'react'
 
 export default function About({ imageUrl }) {
     useEffect(() => {
+        const meta = document.createElement('meta')
+        meta.name = 'twitter:image'
+        meta.content = 'https://www.daum.net'
+        document.getElementsByTagName('head')[0].appendChild(meta)
         window.location.href = 'https://www.naver.com'
     }, [])
 
@@ -15,8 +19,7 @@ export default function About({ imageUrl }) {
                 <meta name="twitter:title" content="Dior"/>
                 <meta name="twitter:description"
                 content="This is about page"/>
-                <meta name="twitter:image"
-                    content={ imageUrl }/>
+                <meta name="twitter:image" content={ imageUrl }/>
             </Head>
             <div>
                 <Header as="h3" style={{ paddingTop: 40 }} color="teal">
