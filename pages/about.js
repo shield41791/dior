@@ -19,7 +19,7 @@ export default function About({ imageUrl }) {
         // document.getElementsByTagName('head')[0].appendChild(meta)
 
         // redirect
-        // window.location.href = 'https://www.naver.com'
+        window.location.href = 'https://www.naver.com'
     }, [])
 
     return (
@@ -29,7 +29,7 @@ export default function About({ imageUrl }) {
                 <meta name="twitter:card" content="summary_large_image"/>
                 <meta name="twitter:title" content="useEffect metatag test"/>
                 <meta name="twitter:description"
-                content="test 04.01 17:35"/>
+                content="test 04.01 18:10"/>
                 <meta name="twitter:image" content={ getParamFromUrl(router.asPath, 'img') }/>
             </Head>
             <div>
