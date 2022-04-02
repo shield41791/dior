@@ -2,6 +2,7 @@ import { Button, Divider, Form, FormButton, Header, Input, List, TextArea } from
 import Head from "next/head";
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
+import Helmet from "react-helmet";
 
 export default function About({ imageUrl }) {
     const router = useRouter()
@@ -25,13 +26,13 @@ export default function About({ imageUrl }) {
     return (
         // <div>pages 폴더 아래에 생성하면, 별다른 설정없이 라우팅된다.</div>;
         <>
-            <Head>
+            <Helmet>
                 <meta name="twitter:card" content="summary_large_image"/>
                 <meta name="twitter:title" content="useEffect metatag test"/>
                 <meta name="twitter:description"
                 content="test 04.01 18:10"/>
                 <meta name="twitter:image" content={ getParamFromUrl(router.asPath, 'img') }/>
-            </Head>
+            </Helmet>
             <div>
                 <Header as="h3" style={{ paddingTop: 40 }} color="teal">
                     회사 소개
